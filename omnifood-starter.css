@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  color: #343a40;
+  height: 100vh;
+}
+
+.section-hero {
+  background-color: #ffd8a8;
+  padding: 9.6rem 0;
+}
+
+.hero {
+  margin: 0 auto;
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4.4rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.primary-header {
+  font-weight: 700;
+  font-size: 5.2rem;
+  letter-spacing: -0.2px;
+  line-height: 1;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.hero-button:link,
+.hero-button:visited {
+  text-decoration: none;
+  padding: 1.2rem 2.4rem;
+  background-color: #ff922b;
+  color: #e9ecef;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.hero-button:hover,
+.hero-button:active {
+  background-color: #f76707;
+}
+
+.hero-button.hero-button--secondary:link,
+.hero-button.hero-button--secondary:visited {
+  background-color: #fff;
+  color: #343a40;
+}
+
+.hero-button.hero-button--secondary:hover,
+.hero-button.hero-button--secondary:active {
+  box-shadow: 0 0 7px 3px #dee2e6;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4.8rem;
+  background-color: #ffd8a8;
+  height: 9.6rem;
+}
+.main-logo {
+  height: 2.4rem;
+}
+
+.delivered-images {
+  display: flex;
+  align-items: center;
+}
+
+.delivered-image {
+  height: 4.2rem;
+  border-radius: 50%;
+  margin-right: -1.4rem;
+}
+
+.delivered-text {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.delivered-image:last-of-type {
+  margin-right: 2.6rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #343a40;
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  background-color: #f76707;
+}
+
+.nav-link.primary:link,
+.nav-link.primary:visited {
+  background-color: #f76707;
+  color: #dee2e6;
+}
+
+.nav-link.primary:hover,
+.nav-link.primary:active {
+  background-color: #fff;
+  color: #343a40;
+}
