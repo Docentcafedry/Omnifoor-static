@@ -11,12 +11,12 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1;
   color: #343a40;
-  height: 100vh;
 }
 
 .section-hero {
   background-color: #ffd8a8;
   padding: 9.6rem 0;
+  margin-bottom: 4.2rem;
 }
 
 .hero {
@@ -144,4 +144,67 @@ body {
 .nav-link.primary:active {
   background-color: #fff;
   color: #343a40;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 110.4rem;
+}
+
+.secondary-header {
+  font-weight: 700;
+  font-size: 4.6rem;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  margin-bottom: 9.8rem;
+}
+
+.third-header {
+  font-weight: 600;
+  font-size: 3.2rem;
+  letter-spacing: 0.2;
+  line-height: 1.4;
+  margin-bottom: 2.8rem;
+}
+
+.how-it-works {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #ff922b;
+  text-transform: uppercase;
+  letter-spacing: 1;
+  margin-bottom: 1.6rem;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2--columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.step-image-content {
+  display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+.step-image {
+  width: 36%;
+}
+
+.step-num {
+  display: block;
+  font-weight: 800;
+  font-size: 9.2rem;
+  color: #dee2e6;
+  margin-bottom: 1rem;
+}
+
+.step-description {
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
