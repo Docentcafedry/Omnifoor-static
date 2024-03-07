@@ -52,9 +52,10 @@ body {
   gap: 2.4rem;
   margin-bottom: 3.2rem;
 }
-
+.btn,
 .hero-button:link,
 .hero-button:visited {
+  border: none;
   text-decoration: none;
   padding: 1.2rem 2.4rem;
   background-color: #ff922b;
@@ -63,6 +64,17 @@ body {
   border-radius: 10px;
   transition: all 0.3s;
   display: inline-block;
+}
+
+.btn--form {
+  background-color: #212529;
+  align-self: end;
+  transition: all 0.3s;
+}
+
+.btn--form:hover {
+  background-color: #e9ecef;
+  color: #212529;
 }
 
 .hero-button:hover,
@@ -187,12 +199,20 @@ body {
   gap: 9.6rem;
 }
 
+.grid:not(:last-child) {
+  margin-bottom: 9.2rem;
+}
+
 .grid--2--columns {
   grid-template-columns: 1fr 1fr;
 }
 
 .grid--3--columns {
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid--4--columns {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 
@@ -399,15 +419,33 @@ body {
 }
 
 .price {
-  box-shadow: 0 2.4rem 4.8rem rgb(0,0,0, 0.37);
-  border-radius: 1rem;
-  overflow: hidden;
   padding: 1.48rem 3.6rem;
+  border-radius: 10px;
 }
 
-.price:hover {
-  box-shadow: 0 4.8rem 9.7rem rgb(0,0,0, 0.3);
+.starter {
+  border: 1px solid #e9ecef;
 }
+
+.complete {
+  background-color: #ffd8a8;
+  position: relative;
+  overflow: hidden;
+}
+
+.complete::before {
+  content: "best choice";
+  text-transform: uppercase;
+  background-color: #fab005;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.8rem 4.2rem;
+  position: absolute;
+  top: 2.4rem;
+  right: -3.8rem;
+  transform: rotate(45deg)
+}
+
 
 .price-name {
   font-size: 1.8rem;
@@ -433,4 +471,98 @@ body {
 .price-description {
   font-size: 1.2rem;
   margin-bottom: 3.2rem;
+}
+
+.feature-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  padding: 1.4rem 1.4rem;
+  background-color: #ff922b;
+  border-radius: 50%;
+  margin-bottom: 2.2rem;
+}
+
+.feature .secondary-header {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.feature-description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+
+}
+
+.section-ctl {
+  margin-bottom: 9.2rem;
+}
+
+.container-ctl {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.container-ctl {
+  background: linear-gradient(to right bottom, #ff922b, #f76707);
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.ctl-text-content {
+  padding: 4.4rem 8.4rem;
+  color: #343a40;
+}
+
+.ctl-text-content .secondary-header {
+  margin-bottom: 3.2rem;
+}
+
+
+.ctl-main-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 3.4rem;
+}
+
+
+
+.ctl-image-content {
+  background-image: linear-gradient(to right bottom, rgb(255, 146, 43, 0.394), rgba(247, 103, 7, 0.322)), url("img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* align-items: center; */
+  justify-content: start;
+  gap: 2.4rem;
+}
+
+
+.form-grid input {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #f8f9fa;
+  font-family: inherit;
+}
+
+.form-grid select {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #f8f9fa;
+  font-family: inherit;
+}
+
+.form-grid label {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+
 }
