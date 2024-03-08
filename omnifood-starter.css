@@ -566,3 +566,104 @@ body {
   margin-bottom: 1.2rem;
 
 }
+
+.footer {
+  border-top: 1px solid #f1f3f5;
+  padding: 9.6rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+
+}
+
+.footer-logo {
+  width: 12.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.socials-links {
+  list-style: none;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.logo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-socials-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #868e96;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  color: inherit;
+}
+
+.footer-heading {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 2.4rem;
+}
+
+.contact-address {
+  font-size: 1.4rem;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.number-link:link,
+.number-link:visited {
+  display: block;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: inherit;;
+}
+
+
+.mail-link:link,
+.mail-link:visited {
+  display: block;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.resources-footer-actions,
+.company-footer-actions,
+.account-footer-actions {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.resources-footer-link:link,
+.company-footer-link:link,
+.account-footer-link:link,
+.account-footer-link:visited,
+.company-footer-link:visited,
+.resources-footer-link:visited {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s;
+}
+
+.resources-footer-link:hover,
+.company-footer-link:hover,
+.account-footer-link:hover, 
+.account-footer-link:active,
+.company-footer-link:active,
+.resources-footer-link:active {
+  color: #868e96
+}
+
