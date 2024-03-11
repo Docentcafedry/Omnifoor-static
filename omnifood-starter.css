@@ -5,12 +5,15 @@
 
 html {
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Inter", sans-serif;
   line-height: 1;
   color: #343a40;
+  /* max-width: 120rem; */
+  overflow-x: hidden;
 }
 
 .section-hero {
@@ -21,7 +24,7 @@ body {
 
 .hero {
   margin: 0 auto;
-  max-width: 130rem;
+  max-width: 120rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -159,6 +162,24 @@ body {
   color: #343a40;
 }
 
+.menu-button-nav {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #343a40;
+}
+
+.close-menu-button-nav {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #343a40;
+  display: none;
+}
+.menu-buttons {
+  padding: 0.8rem;
+  background-color: #ffd8a8;
+  border: none;
+  display: none;
+}
 .container {
   margin: 0 auto;
   max-width: 110.4rem;
@@ -215,9 +236,8 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-
 .step-image-content {
-  display: flex; */
+  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -294,7 +314,7 @@ body {
 }
 
 .meal {
-  box-shadow: 0 2.4rem 4.8rem rgb(0,0,0, 0.37);
+  box-shadow: 0 2.4rem 4.8rem rgb(0, 0, 0, 0.37);
   border-radius: 1rem;
   overflow: hidden;
 }
@@ -330,7 +350,6 @@ body {
   font-weight: 600;
   margin-bottom: 1.4rem;
 }
-
 
 .meal-photo {
   width: 100%;
@@ -412,7 +431,6 @@ body {
   row-gap: 1rem;
 }
 
-
 .section-pricing {
   margin-bottom: 9.2rem;
   padding: 9.6rem 0;
@@ -425,12 +443,15 @@ body {
 
 .starter {
   border: 1px solid #e9ecef;
+  width: 75%;
+  justify-self: end;
 }
 
 .complete {
   background-color: #ffd8a8;
   position: relative;
   overflow: hidden;
+  width: 75%;
 }
 
 .complete::before {
@@ -443,9 +464,8 @@ body {
   position: absolute;
   top: 2.4rem;
   right: -3.8rem;
-  transform: rotate(45deg)
+  transform: rotate(45deg);
 }
-
 
 .price-name {
   font-size: 1.8rem;
@@ -490,7 +510,6 @@ body {
 .feature-description {
   font-size: 1.6rem;
   line-height: 1.6;
-
 }
 
 .section-ctl {
@@ -517,17 +536,19 @@ body {
   margin-bottom: 3.2rem;
 }
 
-
 .ctl-main-text {
   font-size: 1.6rem;
   line-height: 1.6;
   margin-bottom: 3.4rem;
 }
 
-
-
 .ctl-image-content {
-  background-image: linear-gradient(to right bottom, rgb(255, 146, 43, 0.394), rgba(247, 103, 7, 0.322)), url("img/eating.jpg");
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(255, 146, 43, 0.394),
+      rgba(247, 103, 7, 0.322)
+    ),
+    url("img/eating.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -539,7 +560,6 @@ body {
   justify-content: start;
   gap: 2.4rem;
 }
-
 
 .form-grid input {
   width: 100%;
@@ -564,7 +584,6 @@ body {
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 1.2rem;
-
 }
 
 .footer {
@@ -575,7 +594,6 @@ body {
 .footer-container {
   display: grid;
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
-
 }
 
 .footer-logo {
@@ -624,9 +642,8 @@ body {
   display: block;
   font-size: 1.4rem;
   text-decoration: none;
-  color: inherit;;
+  color: inherit;
 }
-
 
 .mail-link:link,
 .mail-link:visited {
@@ -635,7 +652,6 @@ body {
   text-decoration: none;
   color: inherit;
 }
-
 
 .resources-footer-actions,
 .company-footer-actions,
@@ -660,10 +676,9 @@ body {
 
 .resources-footer-link:hover,
 .company-footer-link:hover,
-.account-footer-link:hover, 
+.account-footer-link:hover,
 .account-footer-link:active,
 .company-footer-link:active,
 .resources-footer-link:active {
-  color: #868e96
+  color: #868e96;
 }
-

@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="omnifood-starter.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,6 +33,11 @@
           <a href="#" class="nav-link primary">Section 5</a>
         </ul>
       </nav>
+
+      <button class="menu-buttons">
+        <ion-icon class="menu-button-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="close-menu-button-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <section class="section-hero">
       <div class="hero">
@@ -192,130 +200,144 @@
           Omnifood AI chooses from 5,000+ recipes*
         </h2>
       </div>
-      <div class="container grid grid--3--columns">
-        <div class="meal">
-          <img
-            src="img/meals/meal-1.jpg"
-            class="meal-photo"
-            alt="meal-1-photo"
-          />
-          <div class="meal-content">
-            <div class="meal-tags">
-              <span class="meal-tag meal-tag--vegetarian">Vegetarian</span>
+      <div class="container">
+        <div class="menu grid grid--3--columns">
+          <div class="meal">
+            <img
+              src="img/meals/meal-1.jpg"
+              class="meal-photo"
+              alt="meal-1-photo"
+            />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="meal-tag meal-tag--vegetarian">Vegetarian</span>
+              </div>
+              <p class="meal-name">Japanese Gyozas</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon
+                    class="meal-attr-icon"
+                    name="flame-outline"
+                  ></ion-icon
+                  ><strong>650</strong>&nbsp;calories
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon
+                    class="meal-attr-icon"
+                    name="star-outline"
+                  ></ion-icon
+                  ><strong>4.9</strong>&nbsp;average rating
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-attr-icon" name="eye-outline"></ion-icon
+                  ><strong>537</strong>&nbsp;review number
+                </li>
+              </ul>
             </div>
-            <p class="meal-name">Japanese Gyozas</p>
-            <ul class="meal-attributes">
+          </div>
+          <div class="meal">
+            <img
+              src="img/meals/meal-2.jpg"
+              class="meal-photo"
+              alt="meal-2-photo"
+            />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="meal-tag meal-tag--vegan-and-paleo"
+                  >Vegan and Paleo</span
+                >
+              </div>
+              <p class="meal-name">Avocado Salad</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon
+                    class="meal-attr-icon"
+                    name="flame-outline"
+                  ></ion-icon
+                  ><strong>400</strong>&nbsp;calories
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon
+                    class="meal-attr-icon"
+                    name="star-outline"
+                  ></ion-icon
+                  ><strong>4.8</strong>&nbsp;average rating
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-attr-icon" name="eye-outline"></ion-icon
+                  ><strong>441</strong>&nbsp;review number
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="container">
+            <h3 class="third-header">Works with any diet:</h3>
+            <ul class="list">
               <li class="meal-attribute">
-                <ion-icon class="meal-attr-icon" name="flame-outline"></ion-icon
-                ><strong>650</strong>&nbsp;calories
+                <ion-icon
+                  class="meal-attr-icon"
+                  name="checkmark-done-outline"
+                ></ion-icon
+                ><span>Vegetarian</span>
               </li>
               <li class="meal-attribute">
-                <ion-icon class="meal-attr-icon" name="star-outline"></ion-icon
-                ><strong>4.9</strong>&nbsp;average rating
+                <ion-icon
+                  class="meal-attr-icon"
+                  name="checkmark-done-outline"
+                ></ion-icon
+                ><span>Vegan</span>
               </li>
               <li class="meal-attribute">
-                <ion-icon class="meal-attr-icon" name="eye-outline"></ion-icon
-                ><strong>537</strong>&nbsp;review number
+                <ion-icon
+                  class="meal-attr-icon"
+                  name="checkmark-done-outline"
+                ></ion-icon
+                ><span>Pescatarian</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-attr-icon"
+                  name="checkmark-done-outline"
+                ></ion-icon
+                ><span>Gluten-free</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-attr-icon"
+                  name="checkmark-done-outline"
+                ></ion-icon
+                ><span>Lactose-free</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-attr-icon"
+                  name="checkmark-done-outline"
+                ></ion-icon
+                ><span>Keto</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-attr-icon"
+                  name="checkmark-done-outline"
+                ></ion-icon
+                ><span>Paleo</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-attr-icon"
+                  name="checkmark-done-outline"
+                ></ion-icon
+                ><span>Low FODMAP</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-attr-icon"
+                  name="checkmark-done-outline"
+                ></ion-icon
+                ><span>Kid-friendly</span>
               </li>
             </ul>
           </div>
-        </div>
-        <div class="meal">
-          <img
-            src="img/meals/meal-2.jpg"
-            class="meal-photo"
-            alt="meal-2-photo"
-          />
-          <div class="meal-content">
-            <div class="meal-tags">
-              <span class="meal-tag meal-tag--vegan-and-paleo"
-                >Vegan and Paleo</span
-              >
-            </div>
-            <p class="meal-name">Avocado Salad</p>
-            <ul class="meal-attributes">
-              <li class="meal-attribute">
-                <ion-icon class="meal-attr-icon" name="flame-outline"></ion-icon
-                ><strong>400</strong>&nbsp;calories
-              </li>
-              <li class="meal-attribute">
-                <ion-icon class="meal-attr-icon" name="star-outline"></ion-icon
-                ><strong>4.8</strong>&nbsp;average rating
-              </li>
-              <li class="meal-attribute">
-                <ion-icon class="meal-attr-icon" name="eye-outline"></ion-icon
-                ><strong>441</strong>&nbsp;review number
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="container">
-          <h3 class="third-header">Works with any diet:</h3>
-          <ul class="list">
-            <li class="meal-attribute">
-              <ion-icon
-                class="meal-attr-icon"
-                name="checkmark-done-outline"
-              ></ion-icon
-              ><span>Vegetarian</span>
-            </li>
-            <li class="meal-attribute">
-              <ion-icon
-                class="meal-attr-icon"
-                name="checkmark-done-outline"
-              ></ion-icon
-              ><span>Vegan</span>
-            </li>
-            <li class="meal-attribute">
-              <ion-icon
-                class="meal-attr-icon"
-                name="checkmark-done-outline"
-              ></ion-icon
-              ><span>Pescatarian</span>
-            </li>
-            <li class="meal-attribute">
-              <ion-icon
-                class="meal-attr-icon"
-                name="checkmark-done-outline"
-              ></ion-icon
-              ><span>Gluten-free</span>
-            </li>
-            <li class="meal-attribute">
-              <ion-icon
-                class="meal-attr-icon"
-                name="checkmark-done-outline"
-              ></ion-icon
-              ><span>Lactose-free</span>
-            </li>
-            <li class="meal-attribute">
-              <ion-icon
-                class="meal-attr-icon"
-                name="checkmark-done-outline"
-              ></ion-icon
-              ><span>Keto</span>
-            </li>
-            <li class="meal-attribute">
-              <ion-icon
-                class="meal-attr-icon"
-                name="checkmark-done-outline"
-              ></ion-icon
-              ><span>Paleo</span>
-            </li>
-            <li class="meal-attribute">
-              <ion-icon
-                class="meal-attr-icon"
-                name="checkmark-done-outline"
-              ></ion-icon
-              ><span>Low FODMAP</span>
-            </li>
-            <li class="meal-attribute">
-              <ion-icon
-                class="meal-attr-icon"
-                name="checkmark-done-outline"
-              ></ion-icon
-              ><span>Kid-friendly</span>
-            </li>
-          </ul>
         </div>
       </div>
     </section>
